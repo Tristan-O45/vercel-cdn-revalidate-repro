@@ -55,6 +55,9 @@ export function ReproPage({ path, tag }: ReproPageProps) {
         <Link href="/control/add-cache-tag" prefetch={false}>
           addCacheTag control
         </Link>
+        <Link href="/control/page-add-cache-tag" prefetch={false}>
+          Page addCacheTag control
+        </Link>
       </nav>
     </main>
   );

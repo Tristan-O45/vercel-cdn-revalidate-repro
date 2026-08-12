@@ -3,6 +3,7 @@ export const TAGS = {
   route: "cdn-route",
   directHeader: "cdn-direct-header",
   addCacheTag: "cdn-add-cache-tag",
+  pageAddCacheTag: "cdn-page-add-cache-tag",
 } as const;
 
 export const ALLOWED_TAGS = new Set<string>(Object.values(TAGS));

@@ -43,6 +43,16 @@ const nextConfig: NextConfig = {
         source: "/route",
         headers: taggedCdnHeaders("cdn-route"),
       },
+      {
+        source: "/control/page-add-cache-tag",
+        headers: [
+          ...browserHeaders,
+          {
+            key: "Vercel-CDN-Cache-Control",
+            value: "public, max-age=31536000",
+          },
+        ],
+      },
     ];
   },
 };
